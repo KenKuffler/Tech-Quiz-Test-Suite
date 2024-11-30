@@ -1,0 +1,17 @@
+[
+    {
+      "question": "What is the output of 2 ** 3?",
+      "answers": [
+        { "text": "8", "isCorrect": true },
+        { "text": "9", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Which is mutable in Python?",
+      "answers": [
+        { "text": "list", "isCorrect": true },
+        { "text": "tuple", "isCorrect": false }
+      ]
+    }
+  ]
+  

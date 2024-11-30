@@ -1,0 +1,19 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+      "types": ["cypress"], // Use Cypress-specific types
+      "lib": ["esnext", "dom"], // Include modern JavaScript and DOM typings
+      "noEmit": true, // Prevent TypeScript from generating `.js` files
+      "skipLibCheck": true // Skip type checks for libraries (e.g., node_modules)
+    },
+    "include": [
+      "./**/*.ts", // Include all TypeScript files in the Cypress folder
+      "./**/*.js", // Include JavaScript files (if needed for tests)
+      "../node_modules/cypress" // Ensure Cypress types are included
+    ],
+    "exclude": [
+      "../node_modules", // Exclude node_modules from processing
+      "./**/*.js" // Optionally exclude JavaScript files if not needed
+    ]
+  }
+  
