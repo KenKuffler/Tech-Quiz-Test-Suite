@@ -2,7 +2,7 @@
 
 The **Tech Quiz Test Suite** is a MERN stack application that allows users to take a tech quiz and view their scores. This repository includes both the application code and Cypress test configurations for E2E and component testing.
 
-[![Walkthrough Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/YOUR_VIDEO_ID)  
+[![Walkthrough Video](./README-screenshot.png)](https://drive.google.com/file/d/10HwKwWl0uR6bM7aL-xLH_t0sWNCZC41h/view)  
 Click the thumbnail above to watch the walkthrough video!
 
 ---
