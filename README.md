@@ -42,8 +42,8 @@ cd Tech-Quiz-Test-Suite
 npm install
 
 3. Set up the environment variables:  
-Rename the `.env.example` file to `.env` in the `server` directory.  
-Update the `MONGODB_URI` variable in the `.env` file to point to your MongoDB instance.
+Create a `.env` file in the `server` directory.  
+Insert a `MONGODB_URI` variable in the `.env` file to point to your MongoDB instance. (typically MONGODB_URI='mongodb://127.0.0.1:27017/techquiz')
 
 ---
 
@@ -51,7 +51,7 @@ Update the `MONGODB_URI` variable in the `.env` file to point to your MongoDB in
 
 1. Start the server and client:
 
-npm start
+npm run start:dev
 
 2. Open your browser and visit:
 
@@ -65,11 +65,11 @@ http://localhost:3001
 
 1. Start the application (server and client must be running):
 
-npm start
+npm run start:dev (if you have not done this already)
 
 2. Open Cypress Test Runner for E2E testing:
 
-npx cypress open
+npm run test or npx cypress open
 
 3. Select the E2E Tests option and run the tests in the `cypress/e2e/` directory.
 
@@ -77,7 +77,7 @@ npx cypress open
 
 1. Open Cypress Test Runner for component testing:
 
-npx cypress open --component
+npm run test or npx cypress open --component
 
 2. Select the Component Tests option and run the tests in the `cypress/component/` directory.
 
