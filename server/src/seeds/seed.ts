@@ -1,14 +1,17 @@
 import db from '../config/connection.js';
-import { Question } from '../models/index.js'
+import { Question } from '../models/index.js';
 import cleanDB from './cleanDb.js';
-
-import questionData from './pythonQuestions.json' assert{ type: 'json'};
+import fs from 'fs/promises'; // Import the 'fs/promises' module for dynamic file reads
 
 try {
   await db();
   await cleanDB();
 
-  // bulk create each model
+  // Dynamically load JSON data
+  const data = await fs.readFile(new URL('./pythonQuestions.json', import.meta.url), 'utf8');
+  const questionData = JSON.parse(data);
+
+  // Bulk create each model
   await Question.insertMany(questionData);
 
   console.log('Seeding completed successfully!');
@@ -17,3 +20,4 @@ try {
   console.error('Error seeding database:', error);
   process.exit(1);
 }
+
